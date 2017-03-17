@@ -10,7 +10,6 @@ def find_all_files_in_folder(filepath):
             full_file_name = os.path.join(root, file_name)
             key = (os.path.getsize(full_file_name), file_name)
             all_files[key].append(full_file_name)
-    print(all_files)
     return all_files
 
 
