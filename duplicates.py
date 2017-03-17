@@ -15,7 +15,7 @@ def find_all_files_in_folder(filepath):
 
 def find_duplicates(all_files):
     duplicates = collections.defaultdict(list)
-    for size, file_name in sorted(all_files):
+    for size, file_name in all_files:
         list_of_filepaths = all_files[(size, file_name)]
         if len(list_of_filepaths) > 1:
             key = size, file_name
